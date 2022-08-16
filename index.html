@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cap 14 - Discover Rocketseat</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haus Garagem</title>
 
-<header>
-  <nav>
-    <a href="a">LOGO</a>
-    <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>SERVICES</li>
-      <li>TESTIMONIALS</li>
-      <li>CONTACT</li>
-    </ul>
-  </nav>
-</header>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
 
-<div class="container">
-  <aside>Aside</aside>
-  <main>Main</main>
-</div>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">Haus<span>Garagem</span>.</a>
+        <div class="menu">...</div>
+      </nav>
+    </header>
 
-<div class="galery">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-  <img src="https://source.unsplash.com/random">
-</div>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+              alt="Mecânico trabalhando em um motor"
+            />
+          </div>
+          <div class="text">
+            <h1>Saúde natural para os seus cabelos</h1>
+            <p>
+              Um salão exclusivo em São Paulo, especializado em tratamentos
+              naturais.
+            </p>
+            <a class="button" href="#">Agendar um horário</a>
+          </div>
+        </div>
+      </section>
 
-<button>
-  <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGlkPSJTb2NpYWxfSWNvbnMiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM0X19zdHJva2UiPjxnIGlkPSJZb3V0dWJlXzFfIj48cmVjdCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgaGVpZ2h0PSIxMjgiIHdpZHRoPSIxMjgiLz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMjYuNzIsMzguMjI0YzAsMC0xLjI1Mi04Ljg4My01LjA4OC0xMi43OTQgICAgYy00Ljg2OC01LjEzNi0xMC4zMjQtNS4xNi0xMi44MjQtNS40NThjLTE3LjkxMi0xLjMwNS00NC43OC0xLjMwNS00NC43OC0xLjMwNWgtMC4wNTZjMCwwLTI2Ljg2OCwwLTQ0Ljc4LDEuMzA1ICAgIGMtMi41MDQsMC4yOTgtNy45NTYsMC4zMjItMTIuODI4LDUuNDU4QzIuNTI4LDI5LjM0MiwxLjI4LDM4LjIyNCwxLjI4LDM4LjIyNFMwLDQ4LjY1OCwwLDU5LjA4N3Y5Ljc4MSAgICBjMCwxMC40MzMsMS4yOCwyMC44NjMsMS4yOCwyMC44NjNzMS4yNDgsOC44ODMsNS4wODQsMTIuNzk0YzQuODcyLDUuMTM2LDExLjI2OCw0Ljk3NSwxNC4xMTYsNS41MTEgICAgYzEwLjI0LDAuOTkxLDQzLjUyLDEuMjk3LDQzLjUyLDEuMjk3czI2Ljg5Ni0wLjA0LDQ0LjgwOC0xLjM0NWMyLjUtMC4zMDIsNy45NTYtMC4zMjYsMTIuODI0LTUuNDYyICAgIGMzLjgzNi0zLjkxMiw1LjA4OC0xMi43OTQsNS4wODgtMTIuNzk0UzEyOCw3OS4zMDIsMTI4LDY4Ljg2OHYtOS43ODFDMTI4LDQ4LjY1OCwxMjYuNzIsMzguMjI0LDEyNi43MiwzOC4yMjR6IE01MC43ODQsODAuNzIgICAgTDUwLjc4LDQ0LjUwMWwzNC41ODQsMTguMTcyTDUwLjc4NCw4MC43MnoiIGZpbGw9IiNDRTEzMTIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgaWQ9IllvdXR1YmUiLz48L2c+PC9nPjwvc3ZnPg==" alt="">
+      <div class="divider-1"></div>
 
-  Play
-</button>
-
-<footer>
-  2022
-</footer>
+      <section class="section">
+        <div class="container">outra section</div>
+      </section>
+    </main>
+  </body>
+</html>
